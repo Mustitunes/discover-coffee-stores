@@ -97,6 +97,7 @@ export default async function Page(props: {
                 width="24"
                 height="24"
                 alt="places icon"
+                loading="lazy"
               />
               <p className="pl-2">{address}</p>
             </div>

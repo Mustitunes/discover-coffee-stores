@@ -5,7 +5,7 @@ import { createApi } from 'unsplash-js';
 const getListOfCoffeeStorePhotos = async () => {
     try {
         const response = await fetch(
-            `https://api.unsplash.com/search/photos/?client_id=${process.env.UNSPLASH_ACESS_KEY}&query="coffee shop"&page=1&perPage=10`
+            `https://api.unsplash.com/search/photos/?client_id=${process.env.UNSPLASH_ACESS_KEY}&query="coffee shop"&page=1&perPage=10&orientation=landscape`
         );
 
         const photos = await response.json();
